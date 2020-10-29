@@ -9,7 +9,8 @@ with open("tekstmetemails.txt", "r") as bestand:
     while regel:
 
         # Vul de juiste regular expression voor een email in op de puntjes
-        patroon = r"[A-Za-z]"
+        patroon = r"[\w+@|]
+       
 
         # Gebruik de juiste code op de plaats van de puntjes
         gevonden = re.findall(patroon, regel)
