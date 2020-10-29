@@ -9,7 +9,7 @@ with open("tekstmetemails.txt", "r") as bestand:
     while regel:
 
         # Vul de juiste regular expression voor een email in op de puntjes
-        patroon = r"[\w+@|]
+        patroon = r"((([\w]+[@])[^\.@](([\w]+[\.])+([\w]+[^\. $]))))|((([\w]+[\.])+[\w]+[@])[^\.@](([\w]+[\.])+([\w]+[^\. $])))"
        
 
         # Gebruik de juiste code op de plaats van de puntjes
